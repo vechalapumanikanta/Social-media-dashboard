@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      padding: 2rem;
+    }
+
+    .card {
+      flex: 1;
+      padding: 1.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Social Media Dashboard</h1>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Facebook</h2>
+      <img src="C:\Users\mani\Downloads\facebook.jpg">
+      <p>Number of users: <span id="fbUsers">1,000,000</span></p>
+    </div>
+
+    <div class="card">
+      <h2>Twitter</h2>
+      <img src="C:\Users\mani\Downloads\alexander-shatov-k1xf2D7jWUs-unsplash.jpg">
+      <p>Number of users: <span id="twitterUsers">500,000</span></p>
+    </div>
+
+    <div class="card">
+      <h2>Instagram</h2>
+      <img src="C:\Users\mani\Downloads\insta.jpeg">
+      <p>Number of users: <span id="instaUsers">700,000</span></p>
+    </div>
+  </div>
+
+  <script>
+    // You can replace the following dummy data with actual data from your server or API
+    document.getElementById('fbUsers').innerText = '1,500,000';
+    document.getElementById('twitterUsers').innerText = '800,000';
+    document.getElementById('instaUsers').innerText = '1,200,000';
+  </script>
+
+</body>
+</html>
